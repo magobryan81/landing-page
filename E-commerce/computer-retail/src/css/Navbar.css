@@ -1,0 +1,85 @@
+nav {
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 2px -2px gray;
+    width: 100vw;
+}
+
+.navbar-container .navbar-content,
+.navbar-container .navbar-content .navbar-logo-name, 
+.logo-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.navbar-content .login-button,
+.navbar-logo-name {
+    width: 100%;
+}
+
+.login-button {
+    display: none;
+}
+
+.logo-name {
+    gap: 0.5rem;
+}
+
+
+.navbar-container .navbar-content .navbar-links {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 24px;
+    width: 80%;
+}
+
+.navbar-links li {
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+.navbar-links li::after {
+    content: '';
+    position: absolute;
+    background-color: blue;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: all 0.3s ease;
+}
+
+.navbar-links li:hover::after {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-container .navbar-content .navbar-links {
+        display: flex;
+        
+    }
+    
+    .navbar-logo-name .menu-button {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    nav {
+        padding: 1rem 15rem;
+    }
+
+    .logo-name {
+        font-size: 24px;
+    }
+
+    .login-button {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    }
+}
+
