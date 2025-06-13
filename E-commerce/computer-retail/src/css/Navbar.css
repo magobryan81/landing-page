@@ -1,5 +1,5 @@
 nav {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     box-shadow: 0 2px 2px -2px gray;
     width: 100vw;
 }
@@ -56,12 +56,24 @@ nav {
     width: 100%;
 }
 
+@media only screen and (min-width: 480px) {
+
+}
+
 @media only screen and (min-width: 768px) {
+    
+}
+
+@media only screen and (min-width: 992px) {
+    
+}
+
+@media only screen and (min-width: 1200px) {
     .navbar-container .navbar-content .navbar-links {
         display: flex;
         
     }
-    
+
     .navbar-logo-name .menu-button {
         display: none;
     }

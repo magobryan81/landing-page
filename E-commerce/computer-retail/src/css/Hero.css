@@ -1,0 +1,134 @@
+:root {
+    --headline-color: #3e61da;
+    --subheadline-color: #ffffff;
+
+    --shop-button-hover: #0F3460;
+    --build-button-hover: #00A8E1;
+}
+
+section {
+    padding: 0.5rem 2rem;
+    background-color: #000000;
+    height: 100vh;
+}
+
+.hero-section .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content,
+.image-content {
+    width: 100%;
+}
+
+.section-content .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+.text-content .headline-subheadline h1 {
+    margin-bottom: 1rem;
+    font-size: 48px;
+    color: var(--headline-color);
+}
+
+.headline-subheadline p {
+    line-height: 2;
+    color: var(--subheadline-color);
+}
+
+.text-content .cta-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.cta-buttons .shop-button {
+    border: none;
+    border-radius: 2px;
+    background-color: #3e61da;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.shop-button:hover {
+    background-color: var(--shop-button-hover);
+}
+
+.cta-buttons .build-button {
+    border: 1px solid #3e61da;
+    border-radius: 2px;
+    background: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.build-button:hover {
+    background-color: var(--build-button-hover);
+}
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    
+}
+
+@media only screen and (min-width: 992px) {
+    .hero-section .section-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .image-content img {
+        width: 100%;
+
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-section {
+        /* display: flex;
+        align-items: flex-start;
+        justify-content: center; */
+        padding: 1rem 15rem;
+    }
+
+    .section-content {
+        margin-top: 5rem;
+    }
+
+    .text-content {
+
+    }
+
+    .text-content .headline-subheadline h1 {
+        margin-bottom: 1rem;
+        font-size: 124px;
+        color: var(--headline-color);
+    }
+
+    .headline-subheadline p {
+        font-size: 24px;
+        line-height: 2;
+        color: var(--subheadline-color);
+    }
+
+    .shop-button,
+    .build-button {
+        font-size: 32px;
+    }
+}
