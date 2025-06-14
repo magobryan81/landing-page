@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import Logo from "../assets/react.svg";
 import { HiBars3 } from "react-icons/hi2";
+import SearchIcon from '@mui/icons-material/Search';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import { Box, Drawer, List, ListItem, ListItemButton, ListItemText, Button } from '@mui/material';
 import '../css/Navbar.css';
 
@@ -25,11 +27,9 @@ export default function Navbar() {
             text:"Contact",
         },
     ]
-    const buttonStyle = {
-        color: 'white',
-        width: '10rem',
-        padding: '1rem',
-        fontSize: '16px'
+    const loginStyle = {
+        color: 'gray',
+        fontSize: '40px',
     }
 
     return(
@@ -71,7 +71,23 @@ export default function Navbar() {
                     <li><a href="">Contact</a></li>
                 </ul>
                 <div className="login-button">
-                    <Button variant="contained" sx={buttonStyle} disableElevation>Login</Button>
+                    <button>
+                        <PersonOutlineIcon
+                            sx={{ 
+                                width: loginStyle, 
+                                "&:hover": { color: "black" } 
+                            }}
+                        />
+                    </button>
+                    <button>
+                        <SearchIcon
+                            sx={{ 
+                                width: loginStyle, 
+                                "&:hover": { color: "black" } 
+                            }}
+                        />
+                    </button>
+                    
                 </div>
             </div>
         </nav>
